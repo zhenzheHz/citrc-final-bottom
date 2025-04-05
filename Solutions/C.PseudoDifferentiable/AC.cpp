@@ -5,6 +5,7 @@ signed main() {
     cin.tie(nullptr)->ios_base::sync_with_stdio(0);
     int n;
     cin >> n;
+    if(n == 0) return cout<<0,0;
     vector<int> cof(n+1);
     for(int &i : cof) cin >> i;
     reverse(cof.begin(),cof.end());
