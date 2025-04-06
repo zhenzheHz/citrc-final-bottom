@@ -1,9 +1,9 @@
 from tool import *
 
-path = "/Users/user/Desktop/CITRC-final/113-B/Testcases/D.No 1 can solve this problem"
+path = "/Users/user/Desktop/CITRC-final/113-B/Testcases/E.Today's Kahoot"
 
 duplicate(path)
 
-os.system("zip CJtestD.zip *.in *.out")
+os.system("zip CJtestE.zip *.in *.out")
 
 delete("*.in *.out")
