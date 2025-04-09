@@ -1,7 +1,7 @@
 # CITRC-Bottom-Final題解
 
-## ==A. Unattainable==
-> **首殺**[color=green]
+## A. Unattainable
+> **首殺**
 > zh
 
 ### 轉換一下問題
@@ -77,7 +77,7 @@ while(l+1!=r) {
 cout << l;
 ```
 ---
-:::spoiler <font color="#00EC00">**AC Code**</font> **by Zhenzhe**
+<font color="#00EC00">**AC Code**</font> **by Zhenzhe**
 ```cpp=
 #include <bits/stdc++.h>
 #define int int64_t
@@ -109,4 +109,3 @@ signed main() {
     return 0;
 }
 ```
-:::
