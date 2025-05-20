@@ -27,19 +27,19 @@ def generate(id, space = True, X = -1):
 # case 4 : x = 0
 # case 5 : x = 2
 # case 6 : as statement
-# score : 5 / 5 / 10 / 5 / 25 / 50
+# score : 2, 2, 5, 2, 5, 5
 
-for test in range(100):
-    if test < 5: 
+for test in range(21):
+    if test < 2: 
             with open(f"{conv(test)}.in","w") as file:
                  file.write(f"{random.randint(0,25)}\n{random.choice(alpha)}")
-    elif test < 10:
+    elif test < 4:
          generate(test, space = False, X = 0)
-    elif test < 20:
+    elif test < 9:
          generate(test, space = False, X = 2)
-    elif test < 25:
+    elif test < 11:
          generate(test, X = 0)
-    elif test < 50:
+    elif test < 16:
          generate(test, X = 2)
     else:
          generate(test)

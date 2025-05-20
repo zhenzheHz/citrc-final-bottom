@@ -25,12 +25,12 @@ def generate(id, N = -1, limit = 200000, M1 = False, LM = 2*p14):
 # case 5 : Mi = 1
 # case 6 : sum{Mi} <= 500000
 # case 7 : as statement
-# score : 3 / 3 / 4 / 20 / 10 / 20 / 40
+# score : 3, 3, 2, 3, 3, 5, 5
 
-for test in range(3,100):
+for test in range(3,24):
     if test < 6: generate(test,N = 2)
-    elif test < 10: generate(test,N = 3)
-    elif test < 30: generate(test,limit = 100)
-    elif test < 40: generate(test,M1 = True)
-    elif test < 60: generate(test, LM = 500000)
+    elif test < 8: generate(test,N = 3)
+    elif test < 11: generate(test,limit = 100)
+    elif test < 14: generate(test,M1 = True)
+    elif test < 19: generate(test, LM = 500000)
     else : generate(test)

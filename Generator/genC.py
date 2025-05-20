@@ -31,14 +31,14 @@ def generate(id, assign = -1):
 # case 5 : n = 2
 # case 6 : -100 <= pi <= 100
 # case 7 : as statement
-# score : 4 / 6 / 10 / 15 / 20 / 20 / 25
+# score : 4, 3, 3, 3, 3, 5, 7
 
-for test in range(4,100):
-    if test < 10: generate(test,0)
-    elif test < 20: generate(test,1)
-    elif test < 35: generate_subtask4(test)
-    elif test < 55: generate(test,2)
-    elif test < 75: 
+for test in range(4,28):
+    if test < 7: generate(test,0)
+    elif test < 10: generate(test,1)
+    elif test < 13: generate_subtask4(test)
+    elif test < 16: generate(test,2)
+    elif test < 21: 
         max_p = 100
         generate(test)
     else :

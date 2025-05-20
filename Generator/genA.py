@@ -33,21 +33,12 @@ def generate_caseB(id,sub3 = False,sub4 = False):
 # case 5 : A
 # case 6 : B
 # case 7 : as statement
-# score : 2 / 8 / 10 / 10 / 20 / 20 / 30
+# score : 2, 5, 5, 5, 5, 5, 3
 
-for test in range(2,10):
-    full = test > 7
-    generate_caseA(test,sub2 = True,limit = full)
-for test in range(10,20):
-    generate_caseB(test,sub3 = True)
-for test in range(20,30):
-    generate_caseB(test,sub4 = True)
-for test in range(30,50):
-    generate_caseA(test,limit = test>40)
-for test in range(50,70):
-    generate_caseB(test)
-for test in range(70,100):
-    if random.randint(1,2) == 1:
-        generate_caseA(test,limit = True)
-    else:
-        generate_caseB(test)
+for test in range(2,30):
+    if test < 7: generate_caseA(test, sub2 = True, limit = True)
+    elif test < 12 : generate_caseB(test, sub3 = True)
+    elif test < 17: generate_caseB(test, sub4 = True)
+    elif test < 22 : generate_caseA(test, limit = True)
+    elif test < 28 : generate_caseB(test)
+    else : generate_caseA(test) 

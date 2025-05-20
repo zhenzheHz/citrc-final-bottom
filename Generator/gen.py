@@ -1,6 +1,6 @@
 import os
 from tool import *
-start,end = 0,100
+start,end = 0,50
 
 # solution = "/Users/user/Desktop/CITRC-final/113-B/Solutions/A.Unattainable/AC.cpp"
 compile("sol.cpp")

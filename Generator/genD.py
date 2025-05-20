@@ -28,15 +28,12 @@ def generate_subtask4(id):
 # case 4 : 1 appears only once or never
 # case 5 : 1 <= S <= 10^5
 # case 6 : as statement
-# score : 5 / 10 / 5 / 10 / 20 / 50
+# score : 5, 3, 2, 3, 5, 5
 
-for test in range(5,100):
-    if test < 15: 
+for test in range(5,23):
+    if test < 8: 
         with open(f"{conv(test)}.in","w") as f: f.write(f"{test-4}")
-    elif test < 20: generate(test, haveOne=False)
-    elif test < 23: generate(test, haveOne=False)
-    elif test < 30: generate_subtask4(test)
-    elif test < 35: generate(test,haveOne=False,limit=5)
-    elif test < 50: generate(test,limit = 5)
-    elif test < 55: generate(test,haveOne=False)
+    elif test < 10: generate(test, haveOne=False)
+    elif test < 13: generate_subtask4(test)
+    elif test < 18: generate(test,limit = 5)
     else: generate(test)
