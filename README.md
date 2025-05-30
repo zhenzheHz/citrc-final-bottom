@@ -6,7 +6,7 @@
 ## Polygon
 - problem A : https://polygon.codeforces.com/p5cereI/zhuang/citrcfinal-a
 - problem B : https://polygon.codeforces.com/p4QEslm/zhuang/citrcfinal-b
-- problem C : https://polygon.codeforces.com/p8JFUbm/zhuang/citrcfinal-c)
+- problem C : https://polygon.codeforces.com/p8JFUbm/zhuang/citrcfinal-c
 - problem D : https://polygon.codeforces.com/p9SVKXz/zhuang/citrcfianl-d
 - problem E : https://polygon.codeforces.com/p1L0s94/zhuang/citrcfinal-e
 - problem F : https://polygon.codeforces.com/p433T1P/zhuang/citrcfinal-f
