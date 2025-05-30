@@ -23,8 +23,8 @@ def generate(id, limit = [-1,-1,-1,-1], upN = -1):
 # case 7 : (15) n = 2
 # case 8 : (15) n <= 10^5
 # case 9 : (180) as statement
-# 5, 5, 5, 5, 5, 5, 5, 5, 10
-
+# test :  5,   5,  5,  5,  5,  5,  5,  5, 10
+# point : 5, 120, 45, 10, 10, 10, 50, 50, 100
 for test in range(50):
     if test < 5: generate(test, [1,0,-1,0])
     elif test < 10: generate(test, [-1,0,-1,0])
@@ -32,6 +32,6 @@ for test in range(50):
     elif test < 20: generate(test, [-1,0,-1,-1])
     elif test < 25: generate(test, [-1,1,-1,0])
     elif test < 30: generate(test, [-1,-1,-1,0])
-    elif test < 35: generate(test, upN = 2)
+    elif test < 35: generate(test, [-1,-1,-1,-1], upN = 2)
     elif test < 40: generate(test, upN = threshold)
     else: generate(test)
