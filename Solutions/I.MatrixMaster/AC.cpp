@@ -17,13 +17,13 @@ matrix operator*(const matrix &A, const matrix &B) {
 }
 signed main() {
     cin.tie(nullptr)->ios_base::sync_with_stdio(0);
-    int n,a,b,c,d;
-    cin >> n >> a >> b >> c >> d;
+    int n,a,b,c,d,e;
+    cin >> n >> a >> b >> c >> d >> e;
     matrix T = {
-        {a,b*c,0-d,0},
-        {b,a,0,0-d},
-        {d,0,a,b*c},
-        {0,d,b,a}
+        {a,b*c,d*e,0},
+        {b,a,0,0},
+        {d,0,a,0},
+        {0,d,b,0}
     };
     matrix S = {
         {1},
